@@ -8,6 +8,20 @@ import os
 import pandas as pd
 import altair as alt
 
+
+st.markdown("### 🔐 Enter your OpenAI API Key")
+openai_api_key = st.text_input(
+    "Paste your OpenAI API key here",
+    type="password",
+    placeholder="sk-...",
+    help="You can get it from https://platform.openai.com/account/api-keys"
+)
+
+if not openai_api_key:
+    st.warning("🚨 Please enter your OpenAI API key to continue.")
+    st.stop()
+
+os.environ["OPENAI_API_KEY"] = openai_api_key
 st.set_page_config(page_title="RAG Search with Eval", layout="wide")
 st.title("RAG Search with Evaluation Dashboard")
 
