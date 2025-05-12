@@ -1,0 +1,17 @@
+langchain
+openai
+faiss-cpu
+streamlit
+tqdm
+pypdf
+python-docx
+beautifulsoup4
+sentence-transformers
+streamlit
+pandas
+tiktoken>=0.5.1
+altair
+python-dotenv
+fpdf
+langchain-community
+pydantic-settings
