@@ -9,7 +9,7 @@ import pandas as pd
 import altair as alt
 
 st.set_page_config(page_title="RAG Search with Eval", layout="wide")
-st.title("📚 RAG Search with Evaluation Dashboard")
+st.title("RAG Search with Evaluation Dashboard")
 
 with st.sidebar:
     view_logs = st.checkbox("📈 Show Evaluation Logs")
