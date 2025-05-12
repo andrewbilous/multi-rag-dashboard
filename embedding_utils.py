@@ -6,7 +6,7 @@ from config import settings
 import uuid
 
 print('Settings',settings)
-embedding_model = OpenAIEmbeddings(settings.openai_api_key)
+embedding_model = OpenAIEmbeddings(openai_api_key=settings.openai_api_key)
 
 def embed_and_store(chunks: list[str]):
     docs = [
